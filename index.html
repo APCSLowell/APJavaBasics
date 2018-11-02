@@ -9,29 +9,46 @@
 		<header>
 			<h1>AP Java: a Basic Java Program</h1>
 		</header>
-<p>You've written programs before in some language like JavaScript or Python. In many ways Java programming is similar, but you will
-	notice immediately
-	that the basic Java "Hello, World!" program looks pretty confusing and complicated. Here's a Java program that prints 
-	"Hello, World!". Press the <em>Run</em> button and the program output should appear to the right of the code in what is called
-	the <em>console</em>.
+		<p>You've written programs before in some language like JavaScript or Python. In many ways Java programming is similar, but you will
+			notice immediately
+			that the basic Java "Hello, World!" program looks pretty confusing and complicated. Here's a Java program that prints 
+			"Hello, World!". Press the <em>Run</em> button and the program output should appear to the right of the code in what is called
+			the <em>console</em>.
 
-<p><iframe src="https://trinket.io/embed/java/9498fd9bee" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-<p>Luckily though, one line of code is much more important and interesting than all the rest. For now we are just interested in 
-	<h2><xmp>System.out.println("Hello, World!");</xmp></h2>
-	and we will ignore everything else. This line of code an example of a Java <em>statement</em>. If we think of Java as a language like
-	English, a <em>statement</em> is like a sentence. The same way a period ends an English sentence, a semi-colon marks the end of
-        of a Java statement.
-<p><code>"Hello World!"</code> is an example of a Java <code>String</code>. A <code>String</code> is a collection of letters, digits,
-	punctuation and/or spaces. The beginning and end of the String are marked with <em>double quotes</em> <code>"</code>.
+		<p><iframe src="https://trinket.io/embed/java/9498fd9bee" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<p>Luckily though, one line of code is much more important and interesting than all the rest. For now we are just interested in 
+		<h2><xmp>System.out.println("Hello, World!");</xmp></h2>
+		and we will ignore everything else. This line of code an example of a Java <em>statement</em>. If we think of Java as a language like
+			English, a <em>statement</em> is like a sentence. The same way a period ends an English sentence, a semi-colon marks the end of
+        		of a Java statement.
+		<p><code>"Hello World!"</code> is an example of a Java <code>String</code>. A <code>String</code> is a collection of letters, digits,
+			punctuation and/or spaces. The beginning and end of the String are marked with <em>double quotes</em> <code>"</code>.
 	
-	<h2><code>print()</code> vs <code>println()</code></h2>
-<p><code>System.out.println()</code> prints first and inserts a line break so that <em>whatever is printed next
-	is printed on the next line</em>. Run the following code and you'll notice top and bottom are printed on separate lines.
-<p><iframe src="https://trinket.io/embed/java/d1020fa31a" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-		<p>Java has another printing function. <code>System.out.print()</code> prints, but it does NOT insert a line break.
-Change the first statement to <code>System.out.print("Top");</code> And make sure that "Bottom" is printed on the same line as "Top".
+		<h2><code>print()</code> vs <code>println()</code></h2>
+		<p><code>System.out.println()</code> prints first and inserts a <em>newline</em> so that <em>whatever is printed next
+			is printed on the next line</em>. Run the following code and you'll notice top and bottom are printed on separate lines.
+		<p><iframe src="https://trinket.io/embed/java/d1020fa31a" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<p>Java has another printing function. <code>System.out.print()</code> prints, but it does NOT insert a <em>newline</em>.
+			Change the first statement to <code>System.out.print("Top");</code> And make sure that "Bottom" is printed on the same line as "Top".
 		<p>Now change the second statement to <code>System.out.print("Bottom");</code> and notice that the output doesn’t change
-		since nothing is printed after "Bottom".
+			since nothing is printed after "Bottom".
+		
+		<h2>Escape Characters</h2>
+		
+		<p>Escape characters are special symbols in Java that begin with a backslash <code>\</code>
+			A good way to remember the difference between a backslash and a forward slash is that a backslash leans backwards ( \ ),
+			while a forward slash leans forward ( / ). The Java escape charater for newline is <code>\n</code>. Run the following
+			code and you'll see "Top" and "Bottom" on separate lines.
+		
+		<iframe src="https://trinket.io/embed/java/4491f0c629" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		
+		<p>Other escape charaters are:
+		<ul><li><code>\t</code> Insert a tab in the text at this point
+		<li><code>\'</code> Insert a single quote in the text at this point
+		<li><code>\"</code> Insert a double quote in the text at this point
+		<li><code>\\</code> Insert a backslash in the text at this point
+		</ul>
+
 
 </body>
 </html>
