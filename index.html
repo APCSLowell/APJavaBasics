@@ -19,7 +19,7 @@
 		<p>Luckily though, one line of code in this program is much more important and interesting than all the rest.
 		For now we are just interested in 
 		<h2><xmp>System.out.println("Hello, World!");</xmp></h2>
-		and we will ignore everything else. This line of code an example of a Java <em>statement</em>. If we think of Java as a language like
+		We will ignore everything else. This line of code an example of a Java <em>statement</em>. If we think of Java as a language like
 			English, a <em>statement</em> is like a sentence. The same way a period ends an English sentence, a semi-colon marks the end of
         		of a Java statement.
 		<p><code>"Hello World!"</code> is an example of a Java <code>String</code>. A <code>String</code> is a collection of letters, digits,
@@ -35,19 +35,15 @@
 		<p>Now change the second statement to <code>System.out.print("Bottom");</code> and notice that the output doesn’t change
 			since nothing is printed after "Bottom".
 		
-		<h2>Comments</h2>
-		
-		<p>Lines that begin with two slashes <code>//</code> are ignored by Java. Comments have no effect on the execution
-		of the program. They are used to create notes to yourself or other programmers. They make it easier for other programmers (and your future self) to understand what you meant to
-		do. As your teacher, I'll sometimes give you some unfinished code with the instructions for completing it in comments.
-
-		<iframe src="https://trinket.io/embed/java/afaaa9eef0" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 		
 		<h2>Escape Characters</h2>
 		
 		<p>Escape characters are special symbols in Java that begin with a backslash <code>\</code>
 			A good way to remember the difference between a backslash and a forward slash is that a backslash leans backwards ( \ ),
-			while a forward slash leans forward ( / ). The Java escape charater for newline is <code>\n</code>. Run the following
+			while a forward slash leans forward ( / ). The Java escape charater for newline is <code>\n</code>. 
+			<code>System.out.print("Top\n");</code> would have the same effect as <code>System.out.println("Top");</code>.
+			Using the escape character for newline allows you to insert a line break anywhere inside some text. 
+			Run the following
 			code and you'll see "Top" and "Bottom" on separate lines.
 		
 		<iframe src="https://trinket.io/embed/java/4491f0c629" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
@@ -59,7 +55,15 @@
 		<li><code>\\</code> Insert a backslash in the text at this point
 		</ul>
 		<p>Try changing the newline in the program to one of the other escape charaters then run the program and see what
-	  	is printed.
+	  	is printed.	
+		<h2>Comments</h2>
+		
+		<p>Lines that begin with two slashes <code>//</code> are ignored by Java. Comments have no effect on the execution
+		of the program. They are used to create notes to yourself or other programmers. They make it easier for other programmers (and your future self) to understand what you meant to
+		do. As your teacher, I'll sometimes give you some unfinished code with the instructions for completing it in comments.
+
+		<iframe src="https://trinket.io/embed/java/afaaa9eef0" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		
 			
 		<h2>Arithmetic operators</h2>
 		<p><code>+ - * /</code> are called <em>arithmetic operators</em> and are used for addition, subtraction, multiplication
@@ -69,7 +73,7 @@
 		<p>Double quotes around text tells Java it is an <em>literal</em>. Java will print a literal exactly as written. Here’s
 		an literal <code>"4/4"</code>. If I write the same thing without double quotes it's called a <em>expression</em>. Java
 		evaluates expressions to find a result. Run the following program and you will see that Java prints the literals
-		exactly as they are written (including spaces!), and evaluates the expressions first and then prints the result.
+		exactly as they are written (including spaces!), and evaluates the expression first and then prints the result.
 
 		<iframe src="https://trinket.io/embed/java/6384cbe1db" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 		
@@ -90,12 +94,12 @@
 			
 		<iframe src="https://trinket.io/embed/java/2e9bf5c9b5" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-		<p>Sometimes a logic error crashes the computer and stops the running program. Logic errors that "crash" the computer are
+		<p>Sometimes a logic error "crashes" the computer and stops the running program. Logic errors that crash the computer are
 		called <em>Exceptions</em> and produce an error message. Here I made the logic error of dividing by zero.
 		
 		<iframe src="https://trinket.io/embed/java/bb5085de7e" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 			
-		<h2>Formatting Java Code</h2>
+		<h2>Formatting Java Code with Spaces</h2>
 		
 		<p>In Java programs, some spaces are required. For example, you need at least one space between <em>keywords</em> like
 		<code>public</code>, <code>class</code>, <code>static</code>, and <code>void</code>
@@ -110,7 +114,8 @@
 		<iframe src="https://trinket.io/embed/java/335ee661aa" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 		<h2>Assignment: Four 4s challenge</h2>
-		<p>Use exactly four 4's to write an expression that evaluates to every integer from 1 to 10, using only + - * / and ().
+		<p>Use exactly four 4's to write an expression that evaluates to every integer from 1 to 10, using only the
+		four arithmetic operators + - * / and ().
 		No decimals, factorials, square roots, exponents, or other symbols are allowed. The first one has already been done 
 		for you. Submit the link to your finished program by choosing <em>Share | Link</em>. Go to Google Classroom and
 		and then choose	<em>Add Link</em> to submit the assignment. Don't forget to click the <em>Turn In</em> button.
